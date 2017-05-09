@@ -14,6 +14,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
         <spring:bean id="Bean" name="DerbyDataSource" class="com.mulesoft.training.Database"/>
     </spring:beans>
     <db:derby-config name="Derby_Connector" url="jdbc:derby:memory:muleEmbeddedDB;create=true" doc:name="Derby Configuration"/>
+    
     <jms:activemq-connector name="Active_MQ" brokerURL="vm://localhost" validateConnections="true" doc:name="Active MQ"/>
     <flow name="mavenFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" allowedMethods="GET" doc:name="HTTP"/>

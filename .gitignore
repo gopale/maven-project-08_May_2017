@@ -24,3 +24,4 @@ catalog
 #------------------#
 activemq-data
 derby.log
+velocity.log
