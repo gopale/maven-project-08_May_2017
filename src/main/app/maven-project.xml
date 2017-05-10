@@ -21,7 +21,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 	<http:listener-config
 		name="HTTP_Listener_Configuration"
 		host="0.0.0.0"
-		port="8081"
+		port="${http.port}"
 		doc:name="HTTP Listener Configuration" />
 
 	<spring:beans>
